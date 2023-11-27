@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
   swcMinify: true,
   output: "standalone",
+  images: {
+    domains: ["cdn.discordapp.com"],
+  },
 }
 
-module.exports = nextConfig
+
